@@ -1,0 +1,164 @@
+
+:root{
+  --primary: #123c69;
+  --secondary: #eee2dc;
+  --tertiary: #ac3b61;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--primary) ;
+  
+}
+h1{
+  width: 300px;
+  padding: 20px;
+  background: var(--secondary);
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+h1:hover{
+filter: brightness(90%);
+
+}
+.container{
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.name{
+  background: var(--tertiary);
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  box-shadow: 0px 10px 30px 5px rgba(0,0,0,0.5);
+  margin-top: 20px;
+  width: 150px;
+  
+  
+}
+.name a {
+  display: inline-block;
+  padding: 10px 0px 0px 0px;
+  color: var(--secondary);
+  font-weight: 700;
+  
+}
+.fa-solid{
+  float: right;
+  font-size: 20px;
+}
+.fa-solid:hover{
+  cursor: pointer;
+}
+
+/* modal */
+.modal-container{
+  background: rgba(0,0,0,0.6);
+  display: none;
+  inset: 0px;
+  position: fixed;
+}
+.show-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal{
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  max-width: 95%;
+  width: 500px;
+  animation: modalopen 1s;
+}
+@keyframes modalopen {
+  from{
+     opacity: 0;
+  }
+  to{
+  opacity: 1;
+  }
+}
+.close-icon{
+  color: white;
+  font-size: 24px;
+  position: relative;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.modal-header{
+  background: var(--primary);
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+h3{
+  margin: 0;
+
+}
+.modal-content{
+  padding: 20px;
+  background: whitesmoke;
+  
+}
+ /* form */
+ .form-group{
+  height: 55px;
+ }
+ .form-input{
+  width: 97%;
+  padding: 5px;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  outline: none;
+
+ }
+ .form-label{
+  color: var(--primary);
+  display: block;
+ }
+ button{
+  cursor: pointer;
+  color: white;
+  background: var(--primary);
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+ }
+ button:hover{
+  filter: brightness(110%);
+ }
+ button:focus{
+  outline: none;
+ }
+/* media query for tabs and phones */
+
+@media (max-width: 768px) {
+.container{
+  width: 90vw;
+  margin: auto;
+  flex-direction: column;
+}
+.name{
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
