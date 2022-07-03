@@ -82,7 +82,6 @@ filter: brightness(90%);
 .modal{
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
-  max-width: 90vw;
   width: 500px;
   animation: modalopen 1s;
   margin-left: auto;
@@ -168,4 +167,10 @@ h3{
   margin-left: auto;
   margin-right: auto;
 }
+.modal{
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
