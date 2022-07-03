@@ -68,7 +68,10 @@ filter: brightness(90%);
 .modal-container{
   background: rgba(0,0,0,0.6);
   display: none;
-  inset: 0px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
   position: fixed;
 }
 .show-modal{
@@ -79,7 +82,7 @@ filter: brightness(90%);
 .modal{
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.8);
-  max-width: 90%;
+  max-width: 90vw;
   width: 500px;
   animation: modalopen 1s;
   margin-left: auto;
