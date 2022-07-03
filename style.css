@@ -151,7 +151,9 @@ h3{
  }
 /* media query for tabs and phones */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px){
+  /*Tablets [601px -> 1200px]*/
+
 .container{
   width: 90vw;
   margin: auto;
